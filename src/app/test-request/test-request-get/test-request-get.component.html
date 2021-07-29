@@ -1,0 +1,14 @@
+<div>
+    <label>name : </label><input type="text" #myNameInputText/>
+    <button (click)="searchBookList(myNameInputText.value)">ค้นหา</button>
+    <button (click)="memberapi()">send api</button>
+  
+</div>
+<div *ngFor="let book of bookList">
+{{book.isbn}} {{book.name}}
+</div>
+
+
+<!-- <div *ngFor="let member of memberList">
+    {{member.names}}
+    </div> -->
